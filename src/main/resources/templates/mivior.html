@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Sistema</title>
+    <link th:href="@{/css/bootstrap.css}"
+     rel="stylesheet" href="../static/css/bootstrap.css"/>
+    <script th:src="@{/js/bootstrap.js}" 
+    src="../static/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-3"><img src="../static/imagenes/Logo2.png" th:src="@{/imagenes/Logo2.png}" ></div>
+			<div class="col col-lg-9"><h1>Bienvenido al Sistema</h1></div>
+		</div>
+	</div>
+	<div class="row">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">SistemGym</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Productos</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Nosotros
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="#">Misión</a></li>
+		            <li><a class="dropdown-item" href="#">Visión</a></li>
+		            <li><hr class="dropdown-divider"></li>
+		            <li><a class="dropdown-item" href="#">Valores</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link disabled">Ofertas</a>
+		        </li>
+		      </ul>
+		      <form class="d-flex">
+		        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-success" type="submit">Buscar</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<div class="container">
+	<h1>Misión, Visión y valores</h1>
+		<div class="row">
+		
+			<div class="card" style="width: 18rem;">
+			  <div class="card-body">
+			    <h5 class="card-title">Mision</h5>
+			    <p class="card-text">Por un lado, la definición de la misión hace una referencia al motivo o la razón de la existencia de la empresa, se relaciona con el momento presente en el que se desempeña la organización, indica que es lo que la empresa realiza en un momento determinado.
+
+También, tiene relación con el desempeño del corto plazo de la empresa, se enfoca más en el ahora y en el momento presente. La misión ayuda a determinar que se tiene que hacer para llegar a una meta futura.
+
+Es decir, debe establecer que hace la empresa y que la diferencia de las demás, porque engloba las razones fundamentales de para qué fue creada la empresa.​</p>
+			  </div>
+			</div>
+			<div class="card" style="width: 18rem;">
+			  <div class="card-body">
+			    <h5 class="card-title">Vision</h5>
+			    <p class="card-text">Por su parte, la visión determina el lugar a dónde la empresa debe llegar, por eso su propósito tiene que ser ambicioso, pero sin olvidarse de ser realista.
+
+Asimismo, establece el punto al cual se quiere llegar, por ello su consecución se logra en el largo plazo. La visón se vuelve un motivo de inspiración para que las personas que trabajan en la empresa se comprometan a querer alcanzar el objetivo.
+
+Claro que, la visión de una empresa puede cambiar, pero siempre debe mantener los valores originales que inspiraron la creación de la empresa. </p>
+			  </div>
+			</div>
+			<div class="card" style="width: 18rem;">
+			  <div class="card-body">
+			    <h5 class="card-title">Valores</h5>
+			    <p class="card-text">Aparte de, los valores representan las creencias y los principios que rigen a una empresa, lo que permite orientar las pautas de acción y la conducta de las personas que trabajan dentro de la organización. Representan los principios éticos que sustentan el accionar de la empresa.
+
+En efecto, se convierten en la inspiración y la fuente de motivación para las personas, esto favorece que se genere una imagen positiva de la empresa y le confiere su propia identidad. </p>
+			  </div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+	<div class="row">
+		<div class="col col-lg-4"></div>
+		<div class="col col-lg-4"><h>Todos los derechos reservados para el desarrollador Web @ 2022</h4></div>
+		<div class="col col-lg-4"></div>
+	</div>
+</body>
+</html>

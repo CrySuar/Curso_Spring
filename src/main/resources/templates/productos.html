@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos</title>
+  <link th:href="@{/css/bootstrap.css}" rel="stylesheet" href="../static/css/bootstrap.css" />
+  <script th:src="@{/js/bootstrap.js}" src="../static/js/bootstrap.js"></script>
+</head>
+
+
+<body>
+<div class="conteiner">
+	  	<div class="row">
+	  		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(0, 128, 64);">
+		        <div class="container-fluid">
+		          <a class="navbar-brand" href="#">
+		          <img src="img/cs.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+		          CsSuar
+		          </a>
+		          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		          </button>
+		          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		            <ul class="nav nav-tabs me-auto ">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Active</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+		          <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		            <li><hr class="dropdown-divider"></li>
+		            <li><a class="dropdown-item" href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Link</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link disabled">Disabled</a>
+		        </li>
+		      </ul>
+		            <form class="d-flex">
+		              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		              <button class="btn btn-outline-success" type="submit">Search</button>
+		            </form>
+		          </div>
+		        </div>
+		    </nav>
+	  	</div>
+
+
+  <div class="container">
+    <label for="inputPassword5" class="form-label">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</div>
+  </div>
+
+	<div class="container">
+	<div class="row">
+			<div th:each="producto : ${producto}" class="card" style="width: 18rem;">
+			  <img th:src="${producto.Imagen}" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 th:text="${producto.Nombre}" class="card-title">Producto</h5>
+			    <p th:text="${producto.Clave}" class="card-text">Clave</p>
+			    <p th:text="${producto.Descripcion}" class="card-text">Descripcion</p>
+			    <p th:text="${producto.Existencia}" class="card-text">Existencia</p>
+			    <p th:text="${producto.Unidad}" class="card-text">Unidad</p>
+			    <p th:text="${producto.Precio}" class="card-text">Precio</p>
+			    <a href="#" class="btn btn-primary">Borrar</a>
+			    <a href="#" class="btn btn-primary">Ver</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</body>
+
+</html>
